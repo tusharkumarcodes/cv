@@ -10,15 +10,16 @@
     <style>
         /* CSS Variables for Light Mode - High Visibility/Contrast */
         :root {
-            --primary-color: #0f172a; /* Near-black slate for headings */
-            --secondary-color: #2563eb; /* Vibrant, punchy royal blue */
-            --accent-color: #cbd5e1; /* Stronger gray for borders/dividers */
-            --text-main: #1e293b; /* Very dark gray for main text readability */
-            --text-muted: #475569; /* Darkened muted text so dates don't wash out */
-            --bg-color: #f1f5f9; /* Richer light background */
-            --container-bg: #ffffff; /* Pure white container */
-            --shadow-color: rgba(0,0,0,0.08); /* Slightly stronger shadow */
+            --primary-color: #0f172a; 
+            --secondary-color: #2563eb; 
+            --accent-color: #cbd5e1; 
+            --text-main: #1e293b; 
+            --text-muted: #475569; 
+            --bg-color: #f1f5f9; 
+            --container-bg: #ffffff; 
+            --shadow-color: rgba(0,0,0,0.08); 
             --table-header-bg: #f8fafc;
+            --btn-text-color: #ffffff; /* White text for the blue button in light mode */
         }
 
         /* CSS Variables for Dark Mode */
@@ -32,6 +33,7 @@
             --container-bg: #0f172a;
             --shadow-color: rgba(0,0,0,0.5);
             --table-header-bg: #020617;
+            --btn-text-color: #0f172a; /* Dark text for the light blue button in dark mode */
         }
         
         body {
@@ -85,7 +87,7 @@
 
         header {
             border-bottom: 4px solid var(--primary-color);
-            padding-bottom: 25px;
+            padding-bottom: 30px;
             margin-bottom: 35px;
             text-align: center;
             margin-top: 20px;
@@ -105,8 +107,30 @@
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 1px;
-            margin: 0;
+            margin: 0 0 20px 0;
             transition: color 0.3s ease;
+        }
+
+        /* Contact Button Styles */
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: var(--secondary-color);
+            color: var(--btn-text-color);
+            text-decoration: none;
+            padding: 12px 28px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1.05em;
+            box-shadow: 0 4px 6px var(--shadow-color);
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px var(--shadow-color);
+            filter: brightness(1.1);
         }
 
         h2 {
@@ -264,6 +288,9 @@
         <header>
             <h1>Tushar Kumar</h1>
             <p class="title">Technical Project Manager</p>
+            <a href="mailto:tusharkumar.mohali@gmail.com" class="contact-btn">
+                ✉️ Contact Me
+            </a>
         </header>
 
         <section>
