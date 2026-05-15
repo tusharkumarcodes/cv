@@ -1,15 +1,308 @@
+Here is the complete, professional HTML and CSS code for the CV based on the document you provided. You can copy this code and save it as an `.html` file (for example, `cv.html`) to view it in any web browser.
+
+I've included an embedded stylesheet within the `<head>` section to give it a clean, modern, and readable design suitable for online viewing.
+
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-  h1 {
-    text-align: center;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    [cite_start]<title>CV - Tushar Kumar [cite: 3]</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --text-color: #333;
+            --bg-color: #f4f7f6;
+            --border-color: #e0e0e0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .cv-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px 50px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        header {
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5em;
+            margin: 0 0 5px 0;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-top: 35px;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        h3 {
+            color: var(--secondary-color);
+            margin: 0 0 5px 0;
+            font-size: 1.2em;
+        }
+
+        .job-section {
+            margin-bottom: 25px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+
+        .job-meta {
+            font-style: italic;
+            color: #555;
+            font-size: 0.95em;
+            font-weight: 500;
+        }
+
+        ul {
+            margin-top: 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f9f9f9;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        @media (max-width: 600px) {
+            .cv-container {
+                padding: 20px;
+            }
+            .job-header {
+                flex-direction: column;
+            }
+            .job-meta {
+                margin-top: 5px;
+            }
+        }
+    </style>
 </head>
 <body>
 
-  <h1>Tushar Kumar</h1>
+    <div class="cv-container">
+        <header>
+            [cite_start]<h1>Tushar Kumar [cite: 3]</h1>
+            [cite_start]<p class="subtitle">Technical Project Manager with 11 Years Experience [cite: 4]</p>
+        </header>
+
+        <section>
+            [cite_start]<h2>Skills [cite: 1]</h2>
+            <table>
+                <thead>
+                    <tr>
+                        [cite_start]<th>Type [cite: 2]</th>
+                        [cite_start]<th>Skills [cite: 2]</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        [cite_start]<td>Methodology Expertise [cite: 2]</td>
+                        [cite_start]<td>Agile (Scrum, Kanban), Waterfall [cite: 2]</td>
+                    </tr>
+                    <tr>
+                        [cite_start]<td>SDLC Knowledge [cite: 2]</td>
+                        [cite_start]<td>Understanding of Planning, Coding, Testing, Deployment [cite: 2]</td>
+                    </tr>
+                    <tr>
+                        [cite_start]<td>Risk Management [cite: 2]</td>
+                        [cite_start]<td>Identifying technical "bottlenecks" before they derail the project [cite: 2]</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            [cite_start]<h2>Experience [cite: 5]</h2>
+
+            <div class="job-section">
+                <div class="job-header">
+                    [cite_start]<h3>Project Manager | iTechnolabs [cite: 6, 7]</h3>
+                    [cite_start]<div class="job-meta">Feb 2025 - Present (1 Year and 3 Months) [cite: 8] | [cite_start]Mohali [cite: 6]</div>
+                </div>
+                <ul>
+                    [cite_start]<li>Tushar focuses on the end-to-end delivery of custom web and mobile applications, ensuring all enterprise-grade solutions meet strict quality standards and 100% on-time milestones. [cite: 9]</li>
+                    [cite_start]<li>He also acts as a technical expert during the pre-sales phase to architect feasible project roadmaps and provides leadership throughout the development lifecycle. [cite: 10]</li>
+                </ul>
+            </div>
+
+            <div class="job-section">
+                <div class="job-header">
+                    <h3>Project Manager | [cite_start]Trycyfer [cite: 11, 13]</h3>
+                    [cite_start]<div class="job-meta">Jan 2023 - Jan 2025 (2 Years) [cite: 13] | [cite_start]Mohali [cite: 12]</div>
+                </div>
+                <ul>
+                    [cite_start]<li>He transformed the development department by implementing rigorous Agile methodologies that significantly increased delivery efficiency across a 30+ member team. [cite: 14]</li>
+                    [cite_start]<li>Additionally, he managed the integration processes for a complex ecosystem of 15+ external IT vendors to maintain quality control and seamless internal collaboration. [cite: 15]</li>
+                </ul>
+            </div>
+
+            <div class="job-section">
+                <div class="job-header">
+                    <h3>Business Analyst | [cite_start]AblySoft [cite: 16, 18]</h3>
+                    [cite_start]<div class="job-meta">Feb 2018 - Jan 2023 (~5 Years) [cite: 19] | [cite_start]Mohali [cite: 17]</div>
+                </div>
+                <ul>
+                    [cite_start]<li>Tushar ensured successful project delivery by overseeing the planning, coding, testing, and deployment phases of the development team's workflow. [cite: 20]</li>
+                    [cite_start]<li>He acted as a bridge between technical execution and business needs, leading product development efforts and coordinating with sales to provide technical demos. [cite: 21]</li>
+                </ul>
+            </div>
+
+            <div class="job-section">
+                <div class="job-header">
+                    <h3>Digital Marketing Executive | [cite_start]AblySoft [cite: 22, 24]</h3>
+                    [cite_start]<div class="job-meta">Feb 2016 - Oct 2017 (~2 Years) [cite: 24] | [cite_start]Mohali [cite: 23]</div>
+                </div>
+                <ul>
+                    [cite_start]<li>In this role, he established processes for content marketing and product development efforts during the company's earlier growth stages. [cite: 25]</li>
+                    [cite_start]<li>He streamlined the presentation process by leading product demonstrations for prospects to convert business leads into active projects. [cite: 26]</li>
+                </ul>
+            </div>
+
+            <div class="job-section">
+                <div class="job-header">
+                    <h3>Assistant Editor | [cite_start]SiliconIndia [cite: 27, 29]</h3>
+                    [cite_start]<div class="job-meta">Feb 2014 - Jul 2015 (1 Year 6 Months) [cite: 30] | [cite_start]Bangalore [cite: 28]</div>
+                </div>
+                <ul>
+                    [cite_start]<li>Tushar led the editorial process, managing the creation and curation of content from inception to publication. [cite: 31]</li>
+                    [cite_start]<li>He also initiated and standardized the company's social media management workflows to build a consistent digital presence. [cite: 32]</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            [cite_start]<h2>Certifications [cite: 33]</h2>
+            <table>
+                <thead>
+                    <tr>
+                        [cite_start]<th>Course Name [cite: 34]</th>
+                        [cite_start]<th>University / Provider [cite: 34]</th>
+                        [cite_start]<th>Year [cite: 34]</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        [cite_start]<td>FinTech Specialization [cite: 34]</td>
+                        [cite_start]<td>The Wharton School [cite: 34]</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        [cite_start]<td>Project Management and Planning [cite: 34]</td>
+                        [cite_start]<td>Johns Hopkins University [cite: 34]</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        [cite_start]<td>Advanced Digital Transformation [cite: 34]</td>
+                        [cite_start]<td>IIM Ahmedabad [cite: 34]</td>
+                        [cite_start]<td>2025 [cite: 34]</td>
+                    </tr>
+                    <tr>
+                        [cite_start]<td>Strategic Business Leadership [cite: 34]</td>
+                        [cite_start]<td>University of Glasgow [cite: 34]</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        [cite_start]<td>Full Stack Software Developer Professional [cite: 34]</td>
+                        [cite_start]<td>IBM [cite: 34]</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            [cite_start]<h2>Education [cite: 35]</h2>
+            <table>
+                <thead>
+                    <tr>
+                        [cite_start]<th>Degree [cite: 36]</th>
+                        [cite_start]<th>Specialisation [cite: 36]</th>
+                        [cite_start]<th>School / University [cite: 36]</th>
+                        [cite_start]<th>Place [cite: 36]</th>
+                        [cite_start]<th>Year [cite: 36]</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>B. [cite_start]Tech. [cite: 36]</td>
+                        [cite_start]<td>Computer Science [cite: 36]</td>
+                        [cite_start]<td>Kurukshetra University [cite: 36]</td>
+                        [cite_start]<td>Haryana [cite: 36]</td>
+                        [cite_start]<td>2012 [cite: 36]</td>
+                    </tr>
+                    <tr>
+                        [cite_start]<td>12th [cite: 36]</td>
+                        [cite_start]<td>Math, Science (CBSE) [cite: 36]</td>
+                        [cite_start]<td>Stepping Stones [cite: 36]</td>
+                        [cite_start]<td>Chandigarh [cite: 36]</td>
+                        [cite_start]<td>2008 [cite: 36]</td>
+                    </tr>
+                    <tr>
+                        [cite_start]<td>10th [cite: 36]</td>
+                        [cite_start]<td>Math, Science (CBSE) [cite: 36]</td>
+                        [cite_start]<td>Scholars Home [cite: 36]</td>
+                        [cite_start]<td>Dehradun [cite: 36]</td>
+                        [cite_start]<td>2006 [cite: 36]</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
 
 </body>
 </html>
+
+```
