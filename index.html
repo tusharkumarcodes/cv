@@ -1,3 +1,10 @@
+Here is the updated code. I have removed the "Contact Me" button from the top header to keep it clean and focused.
+
+To expand the services section to six items, I reviewed your CV and added two new core offerings based on your background: **Digital Strategy & Transformation** (highlighting your IIM Ahmedabad certification and business transformation skills) and **Product Lifecycle Management** (highlighting your Business Analyst experience and end-to-end SDLC knowledge).
+
+This perfectly balances the grid design and gives a very comprehensive view of what you can do for a company!
+
+```html
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
@@ -109,7 +116,7 @@
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 1px;
-            margin: 0 0 20px 0;
+            margin: 0;
             transition: color 0.3s ease;
         }
 
@@ -285,7 +292,7 @@
 
         .service-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 20px;
             margin-bottom: 35px;
             text-align: left;
@@ -353,9 +360,6 @@
         <header>
             <h1>Tushar Kumar</h1>
             <p class="title">Technical Project Manager</p>
-            <a href="mailto:tusharkumar.mohali@gmail.com" class="contact-btn">
-                ✉️ Contact Me
-            </a>
         </header>
 
         <section>
@@ -541,6 +545,14 @@
                     <h4>🤝 Vendor & Risk Management</h4>
                     <p>Proactively identifying bottlenecks, mitigating risks, and seamlessly integrating complex ecosystems of external IT vendors.</p>
                 </div>
+                <div class="service-card">
+                    <h4>📈 Digital Strategy & Transformation</h4>
+                    <p>Aligning technology implementation with overarching business goals to drive enterprise-wide digital growth and modernization.</p>
+                </div>
+                <div class="service-card">
+                    <h4>🔄 Product Lifecycle Management</h4>
+                    <p>Expertly overseeing the complete SDLC from initial business analysis and requirement gathering to coding, testing, and deployment.</p>
+                </div>
             </div>
 
             <div class="cta-container">
@@ -587,3 +599,5 @@
     </script>
 </body>
 </html>
+
+```
