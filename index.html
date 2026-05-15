@@ -164,26 +164,35 @@
             transition: color 0.3s ease;
         }
 
-        /* Tech Toolkit Tags */
+        /* Symmetrical Tech Toolkit Grid */
         .tech-container {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
             margin-bottom: 30px;
         }
 
         .tech-group {
+            background: var(--bg-color);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--secondary-color);
             display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 10px;
+            flex-direction: column;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
         }
 
         .tech-group h4 {
-            width: 100%;
-            margin: 0 0 5px 0;
+            margin: 0 0 15px 0;
             color: var(--primary-color);
-            font-size: 1.05em;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
         }
 
         .tech-tag {
@@ -432,31 +441,39 @@
             <div class="tech-container">
                 <div class="tech-group">
                     <h4>Languages & Backend</h4>
-                    <span class="tech-tag">🐍 Python</span>
-                    <span class="tech-tag">🟢 Node.js</span>
-                    <span class="tech-tag">☕ Java</span>
-                    <span class="tech-tag">⚙️ Express.js</span>
+                    <div class="tech-tags">
+                        <span class="tech-tag">🐍 Python</span>
+                        <span class="tech-tag">🟢 Node.js</span>
+                        <span class="tech-tag">☕ Java</span>
+                        <span class="tech-tag">⚙️ Express.js</span>
+                    </div>
                 </div>
                 <div class="tech-group">
                     <h4>Frontend & Database</h4>
-                    <span class="tech-tag">⚛️ React</span>
-                    <span class="tech-tag">🍃 MongoDB</span>
-                    <span class="tech-tag">🎨 HTML5 / CSS3</span>
-                    <span class="tech-tag">🔌 RESTful APIs</span>
+                    <div class="tech-tags">
+                        <span class="tech-tag">⚛️ React</span>
+                        <span class="tech-tag">🍃 MongoDB</span>
+                        <span class="tech-tag">🎨 HTML5 / CSS3</span>
+                        <span class="tech-tag">🔌 RESTful APIs</span>
+                    </div>
                 </div>
                 <div class="tech-group">
                     <h4>AI & Advanced Tech</h4>
-                    <span class="tech-tag">🤖 Artificial Intelligence</span>
-                    <span class="tech-tag">🧠 Generative AI</span>
-                    <span class="tech-tag">✍️ Prompt Engineering</span>
-                    <span class="tech-tag">📊 Data Analytics</span>
+                    <div class="tech-tags">
+                        <span class="tech-tag">🤖 Artificial Intelligence</span>
+                        <span class="tech-tag">🧠 Generative AI</span>
+                        <span class="tech-tag">✍️ Prompt Engineering</span>
+                        <span class="tech-tag">📊 Data Analytics</span>
+                    </div>
                 </div>
                 <div class="tech-group">
                     <h4>Project Management</h4>
-                    <span class="tech-tag">🎯 Jira</span>
-                    <span class="tech-tag">📚 Confluence</span>
-                    <span class="tech-tag">📌 Agile Boards</span>
-                    <span class="tech-tag">🤝 Vendor Platforms</span>
+                    <div class="tech-tags">
+                        <span class="tech-tag">🎯 Jira</span>
+                        <span class="tech-tag">📚 Confluence</span>
+                        <span class="tech-tag">📌 Agile Boards</span>
+                        <span class="tech-tag">🤝 Vendor Platforms</span>
+                    </div>
                 </div>
             </div>
         </section>
