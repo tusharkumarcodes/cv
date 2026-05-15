@@ -1,2 +1,0 @@
-# cv
-Public CV
