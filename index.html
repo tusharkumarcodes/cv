@@ -13,7 +13,7 @@
             --primary-color: #0f172a; 
             --secondary-color: #2563eb; 
             --accent-color: #cbd5e1; 
-            --tag-bg: #e2e8f0;
+            --tag-bg: #f8fafc; /* Lighter background for professional badges */
             --text-main: #1e293b; 
             --text-muted: #475569; 
             --bg-color: #f1f5f9; 
@@ -29,7 +29,7 @@
             --primary-color: #f8fafc;
             --secondary-color: #60a5fa;
             --accent-color: #334155;
-            --tag-bg: #1e293b;
+            --tag-bg: #0f172a;
             --text-main: #e2e8f0;
             --text-muted: #94a3b8;
             --bg-color: #020617;
@@ -164,7 +164,7 @@
             transition: color 0.3s ease;
         }
 
-        /* Tech Toolkit Grid - Transparent with Underlined Titles */
+        /* Tech Toolkit Grid - Enterprise Card Layout */
         .tech-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -173,37 +173,46 @@
         }
 
         .tech-group {
-            background: transparent;
-            padding: 10px 0;
+            background-color: var(--card-bg);
+            padding: 22px;
+            border-radius: 6px;
+            border: 1px solid var(--accent-color);
+            box-shadow: 0 2px 8px var(--shadow-color);
             display: flex;
             flex-direction: column;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .tech-group:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px var(--shadow-color);
         }
 
         .tech-group h4 {
             margin: 0 0 15px 0;
             color: var(--primary-color);
-            font-size: 1.1em;
-            border-bottom: 2px solid var(--accent-color);
-            padding-bottom: 8px;
+            font-size: 1.05em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid var(--accent-color);
+            padding-bottom: 10px;
             transition: color 0.3s ease, border-color 0.3s ease;
         }
 
         .tech-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 8px;
         }
 
         .tech-tag {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
+            display: inline-block;
             background-color: var(--tag-bg);
-            color: var(--text-main);
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 0.9em;
-            font-weight: 500;
+            color: var(--primary-color);
+            padding: 5px 12px;
+            border-radius: 4px; /* Crisp, slightly rounded square corners */
+            font-size: 0.85em;
+            font-weight: 600;
             border: 1px solid var(--accent-color);
             transition: all 0.2s ease;
         }
@@ -212,8 +221,6 @@
             background-color: var(--secondary-color);
             color: var(--btn-text-color);
             border-color: var(--secondary-color);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px var(--shadow-color);
         }
 
         /* Experience Section */
@@ -442,55 +449,55 @@
                 <div class="tech-group">
                     <h4>Languages & Backend</h4>
                     <div class="tech-tags">
-                        <span class="tech-tag">🐍 Python</span>
-                        <span class="tech-tag">🟢 Node.js</span>
-                        <span class="tech-tag">☕ Java</span>
-                        <span class="tech-tag">⚙️ Express.js</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Express.js</span>
                     </div>
                 </div>
                 <div class="tech-group">
                     <h4>Frontend & Database</h4>
                     <div class="tech-tags">
-                        <span class="tech-tag">⚛️ React</span>
-                        <span class="tech-tag">🍃 MongoDB</span>
-                        <span class="tech-tag">🎨 HTML5 / CSS3</span>
-                        <span class="tech-tag">🔌 RESTful APIs</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">HTML5 / CSS3</span>
+                        <span class="tech-tag">RESTful APIs</span>
                     </div>
                 </div>
                 <div class="tech-group">
                     <h4>Cloud & DevOps</h4>
                     <div class="tech-tags">
-                        <span class="tech-tag">☁️ Cloud Platforms</span>
-                        <span class="tech-tag">🐳 Docker</span>
-                        <span class="tech-tag">🔄 CI/CD Pipelines</span>
-                        <span class="tech-tag">🐙 Git & GitHub</span>
+                        <span class="tech-tag">Cloud Platforms</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">CI/CD Pipelines</span>
+                        <span class="tech-tag">Git & GitHub</span>
                     </div>
                 </div>
                 <div class="tech-group">
                     <h4>Architecture & Quality</h4>
                     <div class="tech-tags">
-                        <span class="tech-tag">🏗️ Microservices</span>
-                        <span class="tech-tag">🧪 Automated Testing</span>
-                        <span class="tech-tag">🔍 API Testing</span>
-                        <span class="tech-tag">🛡️ System Design</span>
+                        <span class="tech-tag">Microservices</span>
+                        <span class="tech-tag">Automated Testing</span>
+                        <span class="tech-tag">API Testing</span>
+                        <span class="tech-tag">System Design</span>
                     </div>
                 </div>
                 <div class="tech-group">
                     <h4>AI & Advanced Tech</h4>
                     <div class="tech-tags">
-                        <span class="tech-tag">🤖 Artificial Intelligence</span>
-                        <span class="tech-tag">🧠 Generative AI</span>
-                        <span class="tech-tag">✍️ Prompt Engineering</span>
-                        <span class="tech-tag">📊 Data Analytics</span>
+                        <span class="tech-tag">Artificial Intelligence</span>
+                        <span class="tech-tag">Generative AI</span>
+                        <span class="tech-tag">Prompt Engineering</span>
+                        <span class="tech-tag">Data Analytics</span>
                     </div>
                 </div>
                 <div class="tech-group">
                     <h4>Project Management</h4>
                     <div class="tech-tags">
-                        <span class="tech-tag">🎯 Jira</span>
-                        <span class="tech-tag">📚 Confluence</span>
-                        <span class="tech-tag">📌 Agile Boards</span>
-                        <span class="tech-tag">🤝 Vendor Platforms</span>
+                        <span class="tech-tag">Jira</span>
+                        <span class="tech-tag">Confluence</span>
+                        <span class="tech-tag">Agile Boards</span>
+                        <span class="tech-tag">Vendor Platforms</span>
                     </div>
                 </div>
             </div>
